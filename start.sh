@@ -1,4 +1,4 @@
 #!/bin/bash
 
-echo "••• STARTING HELLBOT •••"
-python3 -m hellbot
+echo "••• STARTING ULTRONBOT •••"
+python3 -m UltronBot
