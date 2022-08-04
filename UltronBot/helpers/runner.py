@@ -36,7 +36,7 @@ def run_async(loop, coro):
 
 async def reload_hellbot():
     executable = sys.executable.replace(" ", "\\ ")
-    args = [executable, "-m", "hellbot"]
+    args = [executable, "-m", "UltronBot"]
     os.execle(executable, *args, os.environ)
     os._exit(143)
 
