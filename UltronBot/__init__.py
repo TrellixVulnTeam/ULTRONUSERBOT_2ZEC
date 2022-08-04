@@ -55,8 +55,8 @@ if not Config.DB_URI:
     quit(1)
 
 
-if not Config.HELLBOT_SESSION:
-    LOGS.warning("Please fill var HELLBOT_SESSION to continue.")
+if not Config.ULTRONBOT_SESSION:
+    LOGS.warning("Please fill var ULTRONBOT_SESSION to continue.")
     quit(1)
 
 
