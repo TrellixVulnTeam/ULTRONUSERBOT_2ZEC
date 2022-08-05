@@ -30,7 +30,7 @@ async def _(event):
             pass
     else:
         await hell.edit("Picked a Logo BG...")
-        async for i in event.client.iter_messages("@HELLBOT_LOGOS", filter=InputMessagesFilterPhotos):
+        async for i in event.client.iter_messages("@UltronBot_LOGOS", filter=InputMessagesFilterPhotos):
             PICS_STR.append(i)
         pic = random.choice(PICS_STR)
         logo_ = await pic.download_media()
@@ -62,7 +62,7 @@ async def _(event):
     draw.text(
         (w_, h_), text, font=font, fill="white", stroke_width=strik, stroke_fill="black"
     )
-    file_name = "HellBot.png"
+    file_name = "UltronBot.png"
     end = datetime.datetime.now()
     ms = (end - start).seconds
     img.save(file_name, "png")

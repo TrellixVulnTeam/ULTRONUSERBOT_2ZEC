@@ -17,11 +17,11 @@ from telethon.tl import functions
 from telethon.tl.functions.channels import GetParticipantRequest
 from telethon.tl.types import ChannelParticipantAdmin, ChannelParticipantCreator
 
-from hellbot import *
-from hellbot.helpers.pasters import pasty
-from hellbot.helpers.int_str import make_int
-from hellbot.config import Config
-from hellbot.sql.gvar_sql import gvarstat
+from UltronBot import *
+from UltronBot.helpers.pasters import pasty
+from UltronBot.helpers.int_str import make_int
+from UltronBot.config import Config
+from UltronBot.sql.gvar_sql import gvarstat
 
 
 # either edit or reply that msg
@@ -104,4 +104,4 @@ async def delete_hell(event, text, time=None, parse_mode=None, link_preview=None
     return await hellevent.delete()
 
 
-# hellbot
+# UltronBot

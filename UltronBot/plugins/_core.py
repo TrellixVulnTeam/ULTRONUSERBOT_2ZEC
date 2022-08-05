@@ -18,7 +18,7 @@ async def kk(event):
         reply_to_id = event.reply_to_msg_id
     cids = await client_id(event)
     ForGo10God, HELL_USER, hell_mention = cids[0], cids[1], cids[2]
-    cmd = "ls hellbot/plugins"
+    cmd = "ls UltronBot/plugins"
     process = await asyncio.create_subprocess_shell(
         cmd, stdout=asyncio.subprocess.PIPE, stderr=asyncio.subprocess.PIPE
     )
@@ -33,7 +33,7 @@ async def kk(event):
 
 <b><i>HELP:</b></i> <i>If you want to know the commands for a plugin, do “ .plinfo <plugin name> ”
 
-<b><a href='https://t.me/its_hellbot'>@Its_HellBot</a></b>
+<b><a href='https://t.me/its_UltronBot'>@Its_UltronBot</a></b>
 """
     hell = await telegraph_paste("All available plugins in Hêllẞø†", OUTPUT)
     await eor(event, f"[All available plugins in Hêllẞø†]({hell})", link_preview=False)
@@ -47,7 +47,7 @@ async def send(event):
     thumb = hell_logo
     input_str = event.pattern_match.group(1)
     omk = f"**• Plugin name ≈** `{input_str}`\n**• Uploaded by ≈** {hell_mention}\n\n⚡ **[ʟɛɢɛռɖaʀʏ ᴀғ ɦɛʟʟɮօt]({chnl_link})** ⚡"
-    the_plugin_file = "./hellbot/plugins/{}.py".format(input_str.lower())
+    the_plugin_file = "./UltronBot/plugins/{}.py".format(input_str.lower())
     if os.path.exists(the_plugin_file):
         await event.client.send_file(
             event.chat_id,
@@ -74,7 +74,7 @@ async def install(event):
         try:
             downloaded_file_name = await event.client.download_media(  # pylint:disable=E0602
                 await event.get_reply_message(),
-                "./hellbot/plugins/"  # pylint:disable=E0602
+                "./UltronBot/plugins/"  # pylint:disable=E0602
             )
             if owo != "-f":
                 op = open(downloaded_file_name, "r")
@@ -119,7 +119,7 @@ async def uninstall(event):
     if ".py" in shortname:
         shortname = shortname.replace(".py", "")
     hell = await eor(event, f"__Trying to uninstall plugin__ `{shortname}` ...")
-    dir_path =f"./hellbot/plugins/{shortname}.py"
+    dir_path =f"./UltronBot/plugins/{shortname}.py"
     try:
         remove_plugin(shortname)
         os.remove(dir_path)
@@ -168,9 +168,9 @@ CmdHelp("core").add_command(
 ).add_command(
   "send", "<file name>", "Sends the given file from your userbot server, if any.", "send alive"
 ).add_command(
-  "cmds", None, "Gives out the list of modules in HellBot."
+  "cmds", None, "Gives out the list of modules in UltronBot."
 ).add_command(
-  "repo", None, "Gives HellBot's Github repo link."
+  "repo", None, "Gives UltronBot's Github repo link."
 ).add_command(
   "help", None, "Shows inline help menu."
 ).add_command(

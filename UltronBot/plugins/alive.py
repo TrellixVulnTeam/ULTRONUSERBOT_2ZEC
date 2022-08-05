@@ -5,7 +5,7 @@ import time
 from telethon.errors import ChatSendInlineForbiddenError as noin
 from telethon.errors.rpcerrorlist import BotMethodInvalidError as dedbot
 
-from hellbot.sql.gvar_sql import gvarstat
+from UltronBot.sql.gvar_sql import gvarstat
 from . import *
 
 #-------------------------------------------------------------------------------
@@ -20,7 +20,7 @@ ALIVE_TEMP = """
 ┣─ <b>» Uptime ~</b> <i>{}</i>
 ┣─ <b>» Ping ~</b> <i>{}</i>
 ╰──────────────
-<b><i>»»» <a href='https://t.me/its_hellbot'>[ †hê Hêllẞø† ]</a> «««</i></b>
+<b><i>»»» <a href='https://t.me/its_UltronBot'>[ †hê Hêllẞø† ]</a> «««</i></b>
 """
 
 msg = """{}\n

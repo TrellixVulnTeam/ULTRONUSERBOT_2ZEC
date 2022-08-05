@@ -12,6 +12,6 @@ HARMFUL = [
     "sys.stdout",
     "sys.stderr",
     "subprocess",
-    "HELLBOT_SESSION",
+    "UltronBot_SESSION",
     "session.save()",
 ]

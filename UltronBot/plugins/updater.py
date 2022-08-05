@@ -23,18 +23,18 @@ NO_HEROKU_APP_CFGD = "No Heroku App Found!"
 HEROKU_GIT_REF_SPEC = "HEAD:refs/heads/master"
 RESTARTING_APP = "Restarting Heroku App..."
 IS_SELECTED_DIFFERENT_BRANCH = "Looks like a custom branch {branch_name} is being used!\nIn this case, updater is unable to identify the branch to be updated. Please check out to an official branch, and re-start the updater."
-hellbot_info = "https://raw.githubusercontent.com/The-HellBot/Plugins/master/hellbot-info.json"
+UltronBot_info = "https://raw.githubusercontent.com/The-UltronBot/Plugins/master/UltronBot-info.json"
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 requirements_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "requirements.txt")
 
 
-async def hell_info(hellbot_info):
-    infos = requests.get(hellbot_info).json()
-    _version = infos['HELLBOT-INFO']['version']
-    _release = infos['HELLBOT-INFO']['release-date']
-    _branch = infos['HELLBOT-INFO']['branch']
-    _author = infos['HELLBOT-INFO']['author']
-    _auturl = infos['HELLBOT-INFO']['author-url']
+async def hell_info(UltronBot_info):
+    infos = requests.get(UltronBot_info).json()
+    _version = infos['UltronBot-INFO']['version']
+    _release = infos['UltronBot-INFO']['release-date']
+    _branch = infos['UltronBot-INFO']['branch']
+    _author = infos['UltronBot-INFO']['author']
+    _auturl = infos['UltronBot-INFO']['author-url']
     return _version, _release, _branch, _author, _auturl
 
 
@@ -91,7 +91,7 @@ async def update(event, repo, ups_rem, ac_br):
         repo.git.reset("--hard", "FETCH_HEAD")
     await update_requirements()
     await eor(event, "✅ Successfully updated Hêllẞø†!\n\nBot is restarting please wait for a minute.")
-    args = [sys.executable, "-m", "hellbot"]
+    args = [sys.executable, "-m", "UltronBot"]
     os.execle(sys.executable, *args, os.environ)
     return
 
@@ -145,10 +145,10 @@ async def upstream(event):
     cid = await client_id(event)
     hell_mention = cid[2]
     if changelog == "" and not force_update:
-        _version, _release, _branch, _author, _auturl = await hell_info(hellbot_info)
-        output_ = f"**Your Bot Version :** `{hell_ver}` \n**Owner :** {hell_mention} \n\n**Official HellBot Version :** `{_version}` \n**Release Date :** `{_release}` \n**Official Repo Branch :** `{_branch}` \n**Update By :** [{_author}]({_auturl})"
+        _version, _release, _branch, _author, _auturl = await hell_info(UltronBot_info)
+        output_ = f"**Your Bot Version :** `{hell_ver}` \n**Owner :** {hell_mention} \n\n**Official UltronBot Version :** `{_version}` \n**Release Date :** `{_release}` \n**Official Repo Branch :** `{_branch}` \n**Update By :** [{_author}]({_auturl})"
         if str(_version) not in str(hell_ver):
-            output_ += f"\n\n**Do** `{hl}update build` **to update your HellBot to latest version.**"
+            output_ += f"\n\n**Do** `{hl}update build` **to update your UltronBot to latest version.**"
         await event.edit(output_)
         return repo.__del__()
     if conf == "" and not force_update:
@@ -186,7 +186,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
                 f"{txt}\n" "`Invalid Heroku vars for updating."
             )
             return repo.__del__()
-        _version, _release, _branch, _author, _auturl = await hell_info(hellbot_info)
+        _version, _release, _branch, _author, _auturl = await hell_info(UltronBot_info)
         await event.edit(f"<b><i>Hêllẞø† Docker Build In Progress !!!</b></i> \n\n<b><i><u>Update Information :</b></i></u> \n<b>• Branch :</b> {_branch} \n<b>• Release Date :</b> {_release} \n<b>• Version :</b> {_version} \n<b>• Author :</b> <a href='{_auturl}'>{_author}</a>", link_preview=False, parse_mode="HTML")
         ups_rem.fetch(ac_br)
         repo.git.reset("--hard", "FETCH_HEAD")
@@ -219,7 +219,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
 @hell_cmd(pattern="update build$")
 async def upstream(event):
     event = await eor(event, "`Hard-Update In Progress... \nPlease wait until docker build is finished...`")
-    off_repo = "https://github.com/The-HellBot/HellBot"
+    off_repo = "https://github.com/The-UltronBot/UltronBot"
     os.chdir("/app")
     git_hell = f"rm -rf .git"
     try:
@@ -249,7 +249,7 @@ async def upstream(event):
     ac_br = repo.active_branch.name
     ups_rem = repo.remote("upstream")
     ups_rem.fetch(ac_br)
-    _version, _release, _branch, _author, _auturl = await hell_info(hellbot_info)
+    _version, _release, _branch, _author, _auturl = await hell_info(UltronBot_info)
     await event.edit(f"<b><i>Hêllẞø† Docker Build In Progress !!</b></i> \n\n<b><i><u>Update Information :</b></i></u> \n<b>• Branch :</b> {_branch} \n<b>• Release Date :</b> {_release} \n<b>• Version :</b> {_version} \n<b>• Author :</b> <a href='{_auturl}'>{_author}</a>", link_preview=False, parse_mode="HTML")
     await deploy(event, repo, ups_rem, ac_br, txt)
 

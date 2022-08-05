@@ -1,2 +1,2 @@
-from hellbot.assistant import *
-from hellbot.helpers import *
+from UltronBot.assistant import *
+from UltronBot.helpers import *

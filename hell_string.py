@@ -6,26 +6,26 @@ from telethon.sessions import StringSession
 from telethon.sync import TelegramClient
 
 
-print("•••   HELLBOT  SESSION  GENERATOR   •••")
-print("\nHello!! Welcome to HellBot Session Generator\n")
+print("•••   UltronBot  SESSION  GENERATOR   •••")
+print("\nHello!! Welcome to UltronBot Session Generator\n")
 okvai = input("Enter 69 to continue: ")
 if okvai == "69":
-    print("Choose the string session type: \n1. HellBot \n2. Music Bot")
+    print("Choose the string session type: \n1. UltronBot \n2. Music Bot")
     library = input("\nYour Choice: ")
     if library == "1":
-        print("\nTelethon Session For HellBot")
+        print("\nTelethon Session For UltronBot")
         APP_ID = int(input("\nEnter APP ID here: "))
         API_HASH = input("\nEnter API HASH here: ")
-        with TelegramClient(StringSession(), APP_ID, API_HASH) as hellbot:
-            print("\nYour HellBot Session Is sent in your Telegram Saved Messages.")
-            hellbot.send_message("me", f"#HELLBOT #HELLBOT_SESSION \n\n`{hellbot.session.save()}`")
+        with TelegramClient(StringSession(), APP_ID, API_HASH) as UltronBot:
+            print("\nYour UltronBot Session Is sent in your Telegram Saved Messages.")
+            UltronBot.send_message("me", f"#UltronBot #UltronBot_SESSION \n\n`{UltronBot.session.save()}`")
     elif library == "2":
         print("Pyrogram Session for Music Bot")
         APP_ID = int(input("\nEnter APP ID here: "))
         API_HASH = input("\nEnter API HASH here: ")
-        with Client(':memory:', api_id=APP_ID, api_hash=API_HASH) as hellbot:
-            print("\nYour HellBot Session Is sent in your Telegram Saved Messages.")
-            hellbot.send_message("me", f"#HELLBOT_MUSIC #HELLBOT_SESSION\n\n`{hellbot.export_session_string()}`")
+        with Client(':memory:', api_id=APP_ID, api_hash=API_HASH) as UltronBot:
+            print("\nYour UltronBot Session Is sent in your Telegram Saved Messages.")
+            UltronBot.send_message("me", f"#UltronBot_MUSIC #UltronBot_SESSION\n\n`{UltronBot.export_session_string()}`")
     else:
         print("Please Enter 1 or 2 only.")
 else:

@@ -17,7 +17,7 @@ from telethon.tl.functions.channels import GetParticipantRequest
 from telethon.tl.functions.channels import JoinChannelRequest
 from telethon.tl.functions.messages import ExportChatInviteRequest
 
-from hellbot.sql.gvar_sql import gvarstat
+from UltronBot.sql.gvar_sql import gvarstat
 from . import *
 
 hell_row = Config.BUTTONS_IN_HELP
@@ -87,7 +87,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
         result = None
         query = event.text
         auth = await clients_list()
-        if event.query.user_id in auth and query == "hellbot_help":
+        if event.query.user_id in auth and query == "UltronBot_help":
             rev_text = query[::-1]
             veriler = button(0, sorted(CMD_HELP))
             apn = []
@@ -118,7 +118,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 result = builder.document(
                     help_pic,
                     text=help_msg,
-                    title="HellBot Alive",
+                    title="UltronBot Alive",
                     buttons=veriler[1],
                     link_preview=False,
                 )
@@ -153,7 +153,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 result = builder.document(
                     PIC,
                     text=he_ll,
-                    title="HellBot Alive",
+                    title="UltronBot Alive",
                     buttons=alv_btn,
                     link_preview=False,
                     parse_mode="HTML",
@@ -161,7 +161,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             else:
                 result = builder.article(
                     text=he_ll,
-                    title="HellBot Alive",
+                    title="UltronBot Alive",
                     buttons=alv_btn,
                     link_preview=False,
                     parse_mode="HTML",
@@ -195,7 +195,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 result = builder.document(
                     file=PIC,
                     text=HELL_FIRST,
-                    title="Hellbot PM Permit",
+                    title="UltronBot PM Permit",
                     buttons=[
                         [custom.Button.inline("📝 Request Approval", data="req")],
                         [custom.Button.inline("🚫 Block", data="heheboi")],
@@ -206,7 +206,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             else:
                 result = builder.article(
                     text=HELL_FIRST,
-                    title="Hellbot PM Permit",
+                    title="UltronBot PM Permit",
                     buttons=[
                         [custom.Button.inline("📝 Request Approval", data="req")],
                         [custom.Button.inline("🚫 Block", data="heheboi")],
@@ -220,8 +220,8 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 title="Repository",
                 text=f"**⚡ ʟɛɢɛռɖaʀʏ ᴀғ ɦɛʟʟɮօt ⚡**",
                 buttons=[
-                    [Button.url("📑 Repo 📑", "https://github.com/The-HellBot/HellBot")],
-                    [Button.url("HellBot Netwprk", "https://t.me/hellbot_network")],
+                    [Button.url("📑 Repo 📑", "https://github.com/The-UltronBot/UltronBot")],
+                    [Button.url("UltronBot Netwprk", "https://t.me/UltronBot_network")],
                 ],
             )
 
@@ -236,15 +236,15 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
 
         else:
             result = builder.article(
-                "@Its_HellBot",
-                text="""**Hey! This is [Hêllẞø†](https://t.me/its_hellbot) \nYou can know more about me from the links given below 👇**""",
+                "@Its_UltronBot",
+                text="""**Hey! This is [Hêllẞø†](https://t.me/its_UltronBot) \nYou can know more about me from the links given below 👇**""",
                 buttons=[
                     [
-                        custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/Its_HellBot"),
-                        custom.Button.url("⚡ GROUP ⚡", "https://t.me/hellbot_chat"),
+                        custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/Its_UltronBot"),
+                        custom.Button.url("⚡ GROUP ⚡", "https://t.me/UltronBot_chat"),
                     ],
                     [
-                        custom.Button.url("✨ REPO ✨", "https://github.com/The-HellBot/HellBot"),
+                        custom.Button.url("✨ REPO ✨", "https://github.com/The-UltronBot/UltronBot"),
                         custom.Button.url("🔰 TUTORIAL 🔰", "https://youtu.be/M2FQJq_sHp4"),
                     ],
                 ],
@@ -422,4 +422,4 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             return await event.answer("You are not authorized to use me! \n© Hêllẞø† ™", cache_time=0, alert=True)
 
 
-# hellbot
+# UltronBot

@@ -9,8 +9,8 @@ from . import *
 
 msg = f"""
 **⚡ ʟɛɢɛռɖaʀʏ ᴀғ ɦɛʟʟɮօt ⚡**
-  •        [📑 Repo 📑](https://github.com/The-HellBot/HellBot)
-  •        [HellBot Network](https://t.me/hellbot_network)
+  •        [📑 Repo 📑](https://github.com/The-UltronBot/UltronBot)
+  •        [UltronBot Network](https://t.me/UltronBot_network)
   •  ©️ {hell_channel} ™
 """
 botname = Config.BOT_USERNAME
@@ -34,7 +34,7 @@ async def _(event):
     chat = "@Botfather"
     if tgbotusername is not None:
         try:
-            results = await event.client.inline_query(tgbotusername, "hellbot_help")
+            results = await event.client.inline_query(tgbotusername, "UltronBot_help")
             await results[0].click(
                 event.chat_id, reply_to=event.reply_to_msg_id, hide_via=True
             )
@@ -61,7 +61,7 @@ async def _(event):
 
 
 @hell_cmd(pattern="plinfo(?:\s|$)([\s\S]*)")
-async def hellbott(event):
+async def UltronBott(event):
     args = event.pattern_match.group(1).lower()
     if args:
         if args in CMD_HELP:

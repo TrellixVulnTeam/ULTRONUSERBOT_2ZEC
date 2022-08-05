@@ -1,6 +1,6 @@
 from . import *
-# Credits to @ForGo10God developer of HellBot.
-# This is my first plugin that I made when I released first HellBot.
+# Credits to @ForGo10God developer of UltronBot.
+# This is my first plugin that I made when I released first UltronBot.
 # Modified to work in groups with inline mode disabled.
 # Added error msg if no voice is found.
 # So please dont remove credit. 

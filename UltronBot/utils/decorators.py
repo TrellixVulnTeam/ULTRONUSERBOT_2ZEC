@@ -9,10 +9,10 @@ from pathlib import Path
 from telethon import TelegramClient, events
 from telethon.errors import MessageIdInvalidError, MessageNotModifiedError
 
-from hellbot import LOGS, bot, tbot
-from hellbot.clients import H2, H3, H4, H5
-from hellbot.config import Config
-from hellbot.helpers import *
+from UltronBot import LOGS, bot, tbot
+from UltronBot.clients import H2, H3, H4, H5
+from UltronBot.config import Config
+from UltronBot.helpers import *
 
 
 # admin cmd or normal user cmd
@@ -56,7 +56,7 @@ def admin_cmd(pattern=None, command=None, **args):
 
     args["outgoing"] = True
     # decides that other users can use it or not
-    # hellbot outgoing
+    # UltronBot outgoing
     if allow_sudo:
         args["from_users"] = list(Config.SUDO_USERS)
         # Mutually exclusive with outgoing (can only set one of either).
@@ -68,14 +68,14 @@ def admin_cmd(pattern=None, command=None, **args):
         args["outgoing"] = True
 
     # blacklisted chats. 
-    # hellbot will not respond in these chats.
+    # UltronBot will not respond in these chats.
     args["blacklist_chats"] = True
     black_list_chats = list(Config.BL_CHAT)
     if black_list_chats:
         args["chats"] = black_list_chats
 
     # blacklisted chats.
-    # hellbot will not respond in these chats.
+    # UltronBot will not respond in these chats.
     if "allow_edited_updates" in args and args["allow_edited_updates"]:
         del args["allow_edited_updates"]
 
@@ -123,7 +123,7 @@ def sudo_cmd(pattern=None, command=None, **args):
                 SUDO_LIST.update({file_test: [cmd]})
     args["outgoing"] = True
     # outgoing check
-    # hellbot
+    # UltronBot
     if allow_sudo:
         args["from_users"] = list(Config.SUDO_USERS)
         # Mutually exclusive with outgoing (can only set one of either).
@@ -133,17 +133,17 @@ def sudo_cmd(pattern=None, command=None, **args):
     elif "incoming" in args and not args["incoming"]:
         args["outgoing"] = True
     # blacklisted chats
-    # hellbot won't respond here
+    # UltronBot won't respond here
     args["blacklist_chats"] = True
     black_list_chats = list(Config.BL_CHAT)
     if black_list_chats:
         args["chats"] = black_list_chats
     # blacklisted chats
-    # hellbot won't respond here
+    # UltronBot won't respond here
     if "allow_edited_updates" in args and args["allow_edited_updates"]:
         del args["allow_edited_updates"]
     # outgoing check
-    # hellbot
+    # UltronBot
     return events.NewMessage(**args)
 
 
@@ -313,4 +313,4 @@ def command(**args):
 
     return decorator
 
-# hellbot
+# UltronBot

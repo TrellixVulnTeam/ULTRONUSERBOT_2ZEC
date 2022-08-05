@@ -6,11 +6,11 @@ from pathlib import Path
 from telethon import Button, TelegramClient
 from telethon.utils import get_peer_id
 
-from hellbot import LOGS, bot, tbot
-from hellbot.clients.session import Hell, H2, H3, H4, H5
-from hellbot.config import Config
-from hellbot.utils import join_it, load_module, logger_check, start_msg, update_sudo, plug_channel
-from hellbot.version import __hell__ as hellver
+from UltronBot import LOGS, bot, tbot
+from UltronBot.clients.session import Hell, H2, H3, H4, H5
+from UltronBot.config import Config
+from UltronBot.utils import join_it, load_module, logger_check, start_msg, update_sudo, plug_channel
+from UltronBot.version import __hell__ as hellver
 
 hl = Config.HANDLER
 
@@ -39,7 +39,7 @@ async def plug_load(path):
             path1 = Path(hell.name)
             shortname = path1.stem
             if shortname.replace(".py", "") in Config.UNLOAD:
-                os.remove(Path(f"hellbot/plugins/{shortname}.py"))
+                os.remove(Path(f"UltronBot/plugins/{shortname}.py"))
             else:
                 load_module(shortname.replace(".py", ""))      
 
@@ -56,14 +56,14 @@ async def hell_is_on(total):
     await join_it(H5)
 
 
-# Hellbot starter...
-async def start_hellbot():
+# UltronBot starter...
+async def start_UltronBot():
     try:
         tbot_id = await tbot.get_me()
         Config.BOT_USERNAME = f"@{tbot_id.username}"
         bot.tgbot = tbot
          LOGS.info("════❰ԱӀէɾօղ Աʂҽɾβօէ❱═❍⊱❁")
-        C1 = await hells(Config.HELLBOT_SESSION, bot, "HELLBOT_SESSION")
+        C1 = await hells(Config.UltronBot_SESSION, bot, "UltronBot_SESSION")
         C2 = await hells(Config.SESSION_2, H2, "SESSION_2")
         C3 = await hells(Config.SESSION_3, H3, "SESSION_3")
         C4 = await hells(Config.SESSION_4, H4, "SESSION_4")
@@ -74,7 +74,7 @@ async def start_hellbot():
         LOGS.info("║┣⪼𝕊𝕥𝕒𝕣𝕥𝕚𝕟𝕘. 𝕌𝕝𝕥𝕣𝕠𝕟 𝕌𝕤𝕖𝕣𝔹𝕠𝕠𝕥║")
         LOGS.info("║┣⪼𝕷𝖔𝖆𝖉𝖎𝖓𝖌..𝖀𝖘𝖊𝖗𝕭𝖔𝖙..")
         LOGS.info("╚══════════════════❍⊱")
-        await plug_load("hellbot/plugins/*.py")
+        await plug_load("UltronBot/plugins/*.py")
         await plug_channel(bot, Config.PLUGIN_CHANNEL)
         LOGS.info(f"""『🔱ԱӀէɾօղ Աʂҽɾβօէ🔱』➙𖤍࿐ IS ON!!! ԱӀէɾօղ Աʂҽɾβօէ VERSION :- 𝕍:𝕒 𝟙.𝟘
                       TYPE :- " .gpromote @LegendHacker_IIN & @thanospros " OR .help OR .ping CHECK IF I'M ON!
@@ -93,7 +93,7 @@ async def start_hellbot():
         sys.exit()
 
 
-bot.loop.run_until_complete(start_hellbot())
+bot.loop.run_until_complete(start_UltronBot())
 
 if len(sys.argv) not in (1, 3, 4):
     bot.disconnect()
@@ -104,4 +104,4 @@ else:
         pass
 
 
-# hellbot
+# UltronBot

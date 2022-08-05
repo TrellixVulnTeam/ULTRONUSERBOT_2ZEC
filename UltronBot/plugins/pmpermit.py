@@ -5,7 +5,7 @@ import os
 from telethon import events, functions
 from telethon.tl.functions.users import GetFullUserRequest
 
-from hellbot.sql import pmpermit_sql as pm_sql
+from UltronBot.sql import pmpermit_sql as pm_sql
 from . import *
 
 PM_WARNS = {}
