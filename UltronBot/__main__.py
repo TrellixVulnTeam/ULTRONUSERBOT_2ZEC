@@ -14,7 +14,7 @@ from UltronBot.version import __hell__ as hellver
 
 hl = Config.HANDLER
 
-HELL_PIC = "https://telegra.ph/file/cb0bd62632a3a2b6b2726.jpg"
+HELL_PIC = "https://telegra.ph/file/82b8456afa0fbdc81ae3d.jpg"
 
 
 # Client Starter
