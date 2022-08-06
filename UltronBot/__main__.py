@@ -63,7 +63,7 @@ async def start_UltronBot():
         Config.BOT_USERNAME = f"@{tbot_id.username}"
         bot.tgbot = tbot
          LOGS.info("════❰ԱӀէɾօղ Աʂҽɾβօէ❱═❍⊱❁")
-        C1 = await hells(Config.UltronBot_SESSION, bot, "UltronBot_SESSION")
+        C1 = await hells(Config.ULTRONBOT_SESSION, bot, "ULTRONBOT_SESSION")
         C2 = await hells(Config.SESSION_2, H2, "SESSION_2")
         C3 = await hells(Config.SESSION_3, H3, "SESSION_3")
         C4 = await hells(Config.SESSION_4, H4, "SESSION_4")
