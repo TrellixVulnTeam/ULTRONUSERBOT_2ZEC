@@ -37,17 +37,17 @@ else:
     abuse_m ="Disabled"
 
 
-my_channel = Config.MY_CHANNEL or "Its_UltronBot"
-my_group = Config.MY_GROUP or "UltronBot_Chat"
+my_channel = Config.MY_CHANNEL or "@UltronBot_OP"
+my_group = Config.MY_GROUP or "@UltronBot_XD"
 if "@" in my_channel:
     my_channel = my_channel.replace("@", "")
 if "@" in my_group:
     my_group = my_group.replace("@", "")
 
-chnl_link = "https://t.me/its_UltronBot"
-hell_channel = f"[†hê Hêllẞø†]({chnl_link})"
+chnl_link = "https://t.me/UltronBot_XD"
+hell_channel = f"[✨ԱӀէɾօղβօէ✨]({chnl_link})"
 grp_link = "https://t.me/UltronBot_Chat"
-hell_grp = f"[Hêllẞø† Group]({grp_link})"
+hell_grp = f"[✨ԱӀէɾօղβօէ Ɠɾօմք✨]({grp_link})"
 
 WELCOME_FORMAT = """**Use these fomats in your welcome note to make them attractive.**
   {mention} :  To mention the user
