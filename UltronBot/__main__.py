@@ -72,7 +72,7 @@ async def start_UltronBot():
         total = C1 + C2 + C3 + C4 + C5
         LOGS.info("╔════❰ԱӀէɾօղ Աʂҽɾβօէ❱═❍⊱❁")
         LOGS.info("║┣⪼ 𝕊𝕥𝕒𝕣𝕥𝕚𝕟𝕘. 𝕌𝕝𝕥𝕣𝕠𝕟 𝕌𝕤𝕖𝕣𝔹𝕠𝕠𝕥")
-        LOGS.info("║┣⪼ 𝕷𝖔𝖆𝖉𝖎𝖓𝖌..𝖀𝖘𝖊𝖗𝕭𝖔𝖙..")
+        LOGS.info("║┣⪼ 𝕊𝕥𝕒𝕣𝕥𝕚𝕟𝕘. 𝕃𝕠𝕕𝕚𝕟𝕘...")
         LOGS.info("╚══════════════════❍⊱")
         await plug_load("UltronBot/plugins/*.py")
         await plug_channel(bot, Config.PLUGIN_CHANNEL)
