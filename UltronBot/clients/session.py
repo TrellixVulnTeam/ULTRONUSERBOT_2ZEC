@@ -7,8 +7,8 @@ from telethon.sessions import StringSession
 from UltronBot.config import Config
 
 
-if Config.UltronBot_SESSION:
-    session = StringSession(str(Config.UltronBot_SESSION))
+if Config.ULTRONBOT_SESSION:
+    session = StringSession(str(Config.ULTRONBOT_SESSION))
 else:
     session = "UltronBot"
 
@@ -22,7 +22,7 @@ try:
         connection_retries=None,
     )
 except Exception as e:
-    print(f"UltronBot_SESSION - {e}")
+    print(f"ULTRONBOT_SESSION - {e}")
     sys.exit()
 
 
