@@ -54,7 +54,7 @@ class Config(object):
         PM_LOG_ID = int(PM_LOG_ID)
     PM_PERMIT = os.environ.get("PM_PERMIT", None)
     REMOVE_BG_API = os.environ.get("REMOVE_BG_API", None)
-    UltronBot_SESSION = os.environ.get("UltronBot_SESSION", None)
+    ULTRONBOT_SESSION = os.environ.get("ULTRONBOT_SESSION", None)
     SESSION_2 = os.environ.get("SESSION_2", None)
     SESSION_3 = os.environ.get("SESSION_3", None)
     SESSION_4 = os.environ.get("SESSION_4", None)
@@ -68,7 +68,7 @@ class Config(object):
     TMP_DOWNLOAD_DIRECTORY = os.environ.get("TMP_DOWNLOAD_DIRECTORY", "./DOWNLOADS/")
     THUMB_IMG = os.environ.get("THUMB_IMG", "./UltronBot/resources/pics/UltronBot_logo.jpg")
     UNLOAD = list(os.environ.get("UNLOAD", "").split())
-    UPSTREAM_REPO = os.environ.get("UPSTREAM_REPO", "https://github.com/The-UltronBot/UltronBot")
+    UPSTREAM_REPO = os.environ.get("UPSTREAM_REPO", "https://github.com/LEGENDXTHANOS/UltronBot")
     WEATHER_API = os.environ.get("WEATHER_API", None)
 
 
