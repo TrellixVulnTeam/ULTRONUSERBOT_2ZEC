@@ -62,7 +62,7 @@ async def start_UltronBot():
         tbot_id = await tbot.get_me()
         Config.BOT_USERNAME = f"@{tbot_id.username}"
         bot.tgbot = tbot
-         LOGS.info("════❰ԱӀէɾօղ Աʂҽɾβօէ❱═❍⊱❁")
+         LOGS.info("══❰ԱӀէɾօղ Աʂҽɾβօէ❱═❍⊱❁")
         C1 = await hells(Config.ULTRONBOT_SESSION, bot, "ULTRONBOT_SESSION")
         C2 = await hells(Config.SESSION_2, H2, "SESSION_2")
         C3 = await hells(Config.SESSION_3, H3, "SESSION_3")
@@ -70,15 +70,15 @@ async def start_UltronBot():
         C5 = await hells(Config.SESSION_5, H5, "SESSION_5")
         await tbot.start()
         total = C1 + C2 + C3 + C4 + C5
-        LOGS.info("╔════❰ԱӀէɾօղ Աʂҽɾβօէ❱═❍⊱❁۪۪")
-        LOGS.info("║┣⪼𝕊𝕥𝕒𝕣𝕥𝕚𝕟𝕘. 𝕌𝕝𝕥𝕣𝕠𝕟 𝕌𝕤𝕖𝕣𝔹𝕠𝕠𝕥║")
-        LOGS.info("║┣⪼𝕷𝖔𝖆𝖉𝖎𝖓𝖌..𝖀𝖘𝖊𝖗𝕭𝖔𝖙..")
+        LOGS.info("╔════❰ԱӀէɾօղ Աʂҽɾβօէ❱═❍⊱❁")
+        LOGS.info("║┣⪼ 𝕊𝕥𝕒𝕣𝕥𝕚𝕟𝕘. 𝕌𝕝𝕥𝕣𝕠𝕟 𝕌𝕤𝕖𝕣𝔹𝕠𝕠𝕥")
+        LOGS.info("║┣⪼ 𝕷𝖔𝖆𝖉𝖎𝖓𝖌..𝖀𝖘𝖊𝖗𝕭𝖔𝖙..")
         LOGS.info("╚══════════════════❍⊱")
         await plug_load("UltronBot/plugins/*.py")
         await plug_channel(bot, Config.PLUGIN_CHANNEL)
         LOGS.info(f"""『🔱ԱӀէɾօղ Աʂҽɾβօէ🔱』➙𖤍࿐ IS ON!!! ԱӀէɾօղ Աʂҽɾβօէ VERSION :- 𝕍:𝕒 𝟙.𝟘
                       TYPE :- " .gpromote @LegendHacker_IIN & @thanospros " OR .help OR .ping CHECK IF I'M ON!
-                      ╔════❰ԱӀէɾօղ Աʂҽɾβօէ❱═❍⊱❁
+                      ╔════❰ ԱӀէɾօղ Աʂҽɾβօէ ❱═❍⊱❁
                       ║┣⪼ OWNER - 𝕃𝕖𝕘𝕖𝕟𝕕ℍ𝕒𝕔𝕜𝕖𝕣 & 𝕋𝕙𝕒𝕟𝕠𝕤𝔹𝕠𝕪
                       ║┣⪼ Ultra Real Stick Bot 
                       ║┣⪼ CREATOR -@LegendHacker_IIN & @thanospros
