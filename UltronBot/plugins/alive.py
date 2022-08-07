@@ -46,7 +46,7 @@ async def up(event):
     cid = await client_id(event)
     ForGo10God, HELL_USER, hell_mention = cid[0], cid[1], cid[2]
     start = datetime.datetime.now()
-    hell = await eor(event, "`Building Alive....`")
+    hell = await eor(event, "`ԱӀէɾօղβօէ įʂ ටղƑìɾҽ....`")
     uptime = await get_time((time.time() - StartTime))
     a = gvarstat("ALIVE_PIC")
     pic_list = []
@@ -57,7 +57,7 @@ async def up(event):
                 pic_list.append(c)
         PIC = random.choice(pic_list)
     else:
-        PIC = "https://telegra.ph/file/ea9e11f7c9db21c1b8d5e.mp4"
+        PIC = "https://telegra.ph/file/eaad0c60c09f04bdb2024.jpg"
     end = datetime.datetime.now()
     ling = (end - start).microseconds / 1000
     omk = ALIVE_TEMP.format(ForGo10God, HELL_USER, tel_ver, hell_ver, is_sudo, uptime, ling)
@@ -66,12 +66,12 @@ async def up(event):
 
 
 
-@hell_cmd(pattern="hell$")
+@hell_cmd(pattern="ultron$")
 async def hell_a(event):
     cid = await client_id(event)
     ForGo10God, HELL_USER, hell_mention = cid[0], cid[1], cid[2]
     uptime = await get_time((time.time() - StartTime))
-    am = gvarstat("ALIVE_MSG") or "<b>»» нєℓℓвσт ιѕ σиℓιиє ««</b>"
+    am = gvarstat("ALIVE_MSG") or "<b>🔥🔥ԱӀէɾօղβօէ įʂ ටղƑìɾҽ🔥🔥</b>"
     try:
         hell = await event.client.inline_query(Config.BOT_USERNAME, "alive")
         await hell[0].click(event.chat_id)
@@ -84,7 +84,7 @@ async def hell_a(event):
 CmdHelp("alive").add_command(
   "alive", None, "Shows the Default Alive Message"
 ).add_command(
-  "hell", None, "Shows Inline Alive Menu with more details."
+  "ultron", None, "Shows Inline Alive Menu with more details."
 ).add_warning(
   "✅ Harmless Module"
 ).add()
