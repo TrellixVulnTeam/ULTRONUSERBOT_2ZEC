@@ -220,7 +220,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                     title="𝕌𝕝𝕥𝕣𝕠𝕟𝔹𝕠𝕥 ℙ𝕄 ℙ𝕖𝕣𝕞𝕚𝕥.",
                     buttons=[
                         [custom.Button.inline("📝 𝕌𝕝𝕥𝕣𝕠𝕟 ℝ𝕖𝕢𝕦𝕖𝕤𝕥 𝔸𝕡𝕡𝕣𝕠𝕧𝕒𝕝", data="req")],
-                        [custom.Button.inline("🚫 𝔹𝕝𝕠𝕔𝕜",", data="heheboi")],
+                        [custom.Button.inline("🚫 𝔹𝕝𝕠𝕔𝕜", data="heheboi")],
                         [custom.Button.inline("❓ ℂ𝕦𝕣𝕚𝕠𝕦𝕤.", data="pmclick")],
                     ],
                     link_preview=False,
