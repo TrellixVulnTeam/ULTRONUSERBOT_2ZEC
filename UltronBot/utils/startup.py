@@ -79,7 +79,7 @@ async def join_it(client):
     if client:
         try:
             await client(functions.channels.JoinChannelRequest("@UltronBot_XD"))
-            await client(functions.messages.ImportChatInviteRequest('@UltronBot_OP'))
+            await client(functions.channels.JoinChannelRequest("@UltronBot_OP"))
         except BaseException:
             pass
 
