@@ -302,7 +302,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
             first_name = html.escape(target.user.first_name)
             if first_name is not None:
                 first_name = first_name.replace("\u2060", "")
-            await tbot.send_message(LOG_GP, f"#BETA_CHOD_GYA_TUTO_BLOCK \n\n**βꝈට↻ҠƐᎠ** [{first_name}](tg://user?id={event.query.user_id}) \nℝ𝕖𝕒𝕤𝕠𝕟:- 𝕌𝕝𝕥𝕣𝕠𝕟 ℙ𝕄 𝕊𝕖𝕝𝕗 𝔹𝕝𝕠𝕔𝕜)
+            await tbot.send_message(LOG_GP, f"#BETA_CHOD_GYA_TUTO_BLOCK \n\n**βꝈට↻ҠƐᎠ** [{first_name}](tg://user?id={event.query.user_id}) \nℝ𝕖𝕒𝕤𝕠𝕟:- 𝕌𝕝𝕥𝕣𝕠𝕟 ℙ𝕄 𝕊𝕖𝕝𝕗 𝔹𝕝𝕠𝕔𝕜")
 
 
     @tgbot.on(callbackquery.CallbackQuery(data=compile(b"reopen")))
