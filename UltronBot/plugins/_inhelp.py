@@ -99,6 +99,8 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 help_pic = a.split(" ")[0]
             else:
                 help_pic = "https://telegra.ph/file/193fd25d076d8fa882c58.jpg"
+                help_msg = f"💥💥 **{hell_mention}**\n\n💥💥ԱӀէɾօղ-φӀմցìղʂ : `{len(CMD_HELP)}` \n💥💥ԱӀէɾօղ-↻ʍժʂ: `{len(apn)}`\n💥💥ԱӀէɾօղ-φąցҽʂ: 1/{veriler[0]}"
+                """
                 help_msg = f"╔═══💫✨💫═══\n"
                 help_msg = f"┃**{hell_mention}**\n"
                 help_msg = f"╚═══💫✨💫═══\n"
@@ -107,7 +109,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 help_msg = f"┣💥ԱӀէɾօղ-↻ʍժʂ: `{len(apn)}`\n"
                 help_msg = f"┣💥ԱӀէɾօղ-φąցҽʂ : 1/{veriler[0]}`\n"
                 help_msg = f"╚══════✣✤༻⋇༺✤✣══════╝\n"
-                
+                """
             if help_pic == "DISABLE":
                 result = builder.article(
                     f"Hey! Only use {hl}help please",
@@ -217,7 +219,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                     title="𝕌𝕝𝕥𝕣𝕠𝕟𝔹𝕠𝕥 ℙ𝕄 ℙ𝕖𝕣𝕞𝕚𝕥.",
                     buttons=[
                         [custom.Button.inline("📝 𝕌𝕝𝕥𝕣𝕠𝕟 ℝ𝕖𝕢𝕦𝕖𝕤𝕥 𝔸𝕡𝕡𝕣𝕠𝕧𝕒𝕝", data="req")],
-                        [custom.Button.inline("🚫 𝔹𝕝𝕠𝕔𝕜", data="heheboi")],
+                        [custom.Button.inline("🚫 𝔹𝕝𝕠𝕔𝕜",", data="heheboi")],
                         [custom.Button.inline("❓ ℂ𝕦𝕣𝕚𝕠𝕦𝕤.", data="pmclick")],
                     ],
                     link_preview=False,
@@ -316,6 +318,8 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 for y in x:
                     apn.append(y)
             await event.edit(
+                         f"💥💥 **{hell_mention}**\n\n💥💥 ԱӀէɾօղ-φӀմցìղʂ𝖗 : `{len(CMD_HELP)}` \n💥💥ԱӀէɾօղ-↻ʍժ : `{len(apn)}`\n💥💥ԱӀէɾօղ-φąցҽʂ: 1/{veriler[0]}",
+                """
                            f"╔═══💫✨💫═══\n"
                            f"┃**{hell_mention}**\n"
                            f"╚═══💫✨💫═══\n"
@@ -324,6 +328,7 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                            f"┣💥ԱӀէɾօղ-↻ʍժʂ: `{len(apn)}`\n"
                            f"┣💥ԱӀէɾօղ-φąցҽʂ : 1/{veriler[0]}`\n"
                            f"╚══════✣✤༻⋇༺✤✣══════╝\n",
+                           """
                 buttons=simp[1],
                 link_preview=False,
             )
@@ -362,14 +367,15 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
                 apn.append(y)
         if event.query.user_id in auth:
             await event.edit(
-                           f"╔═══💫✨💫═══\n"
+                           f"💥💥 **{hell_mention}**\n\n💥💥 ԱӀէɾօղ-φӀմցìղʂ𝖗 : `{len(CMD_HELP)}` \n💥💥ԱӀէɾօղ-↻ʍժ : `{len(apn)}`\n💥💥ԱӀէɾօղ-φąցҽʂ: 1/{veriler[0]}",
+                           """f"╔═══💫✨💫═══\n"
                            f"┃**{hell_mention}**\n"
                            f"╚═══💫✨💫═══\n"
                            f"╔══════✣✤༻⋇༺✤✣══════╗\n"
                            f"┣💥ԱӀէɾօղ-φӀմցìղʂ: `{len(CMD_HELP)}` \n"
                            f"┣💥ԱӀէɾօղ-↻ʍժʂ: `{len(apn)}`\n"
                            f"┣💥ԱӀէɾօղ-φąցҽʂ : 1/{veriler[0]}`\n"
-                           f"╚══════✣✤༻⋇༺✤✣══════╝\n",
+                           f"╚══════✣✤༻⋇༺✤✣══════╝\n","""
                 buttons=veriler[1],
                 link_preview=False,
             )
