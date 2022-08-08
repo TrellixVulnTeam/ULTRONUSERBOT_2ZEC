@@ -345,11 +345,12 @@ if Config.BOT_USERNAME is not None and tgbot is not None:
         auth = await clients_list()
         if event.query.user_id in auth:
             veriler = custom.Button.inline(f"{hell_emoji} Re-Open Menu {hell_emoji}", data="reopen")
-            await event.edit(   f"╔═══💫✨💫═══\n"
-                                f"┃**⚜️ 𝕌𝕝𝕥𝕣𝕠𝕟𝔹𝕠𝕥 𝕄𝕖𝕟𝕦 ℙ𝕣𝕠𝕧𝕚𝕕𝕖𝕣 𝕀𝕤 ℕ𝕠𝕨 ℂ𝕝𝕠𝕤𝕖𝕕 ⚜️**\n"
-                                f"┃**𝕌𝕝𝕥𝕣𝕠𝕟𝔹𝕠𝕥 𝕆𝕗 :**  {hell_mention}\n"  
-                                f"╚═══💫✨💫═══\n"
-                                 [©️ ԱӀէɾօղβօէ ™️]({chnl_link})", buttons=veriler, link_preview=False)"
+            await event.edit(f"**💥💥𝕌𝕝𝕥𝕣𝕠𝕟𝔹𝕠𝕥 𝕄𝕖𝕟𝕦 ℙ𝕣𝕠𝕧𝕚𝕕𝕖𝕣 𝕀𝕤 ℕ𝕠𝕨 ℂ𝕝𝕠𝕤𝕖𝕕💥💥**\n\n**𝕌𝕝𝕥𝕣𝕠𝕟𝔹𝕠𝕥 𝕆𝕗:**  {hell_mention}\n\n        [©️ԱӀէɾօղβօէ™️]({chnl_link})", buttons=veriler, link_preview=False)   
+                                #f"╔═══💫✨💫═══\n"
+                                #f"┃**⚜️ 𝕌𝕝𝕥𝕣𝕠𝕟𝔹𝕠𝕥 𝕄𝕖𝕟𝕦 ℙ𝕣𝕠𝕧𝕚𝕕𝕖𝕣 𝕀𝕤 ℕ𝕠𝕨 ℂ𝕝𝕠𝕤𝕖𝕕 ⚜️**\n"
+                                #f"┃**𝕌𝕝𝕥𝕣𝕠𝕟𝔹𝕠𝕥 𝕆𝕗 :**  {hell_mention}\n"  
+                                #f"╚═══💫✨💫═══\n"
+                                #[©️ ԱӀէɾօղβօէ ™️]({chnl_link})", buttons=veriler, link_preview=False)"
         else:
             reply_pop_up_alert = "𝕐𝕠𝕦 𝕒𝕣𝕖 𝕟𝕠𝕥 𝕒𝕦𝕥𝕙𝕠𝕣𝕚𝕫𝕖𝕕 𝕥𝕠 𝕦𝕤𝕖 𝕞𝕖! \n© ԱӀէɾօղβօէ ™"
             await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
