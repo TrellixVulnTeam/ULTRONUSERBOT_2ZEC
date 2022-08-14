@@ -1,4 +1,4 @@
-import time
+"""import time
 
 from telethon import version
 from UltronBot import ALIVE_NAME, StartTime, version
@@ -104,3 +104,4 @@ async def amireallyalive(event):
 CmdHelp("awake").add_command(
     'bot', None, 'υѕє αи∂ ѕєє'
 ).add()
+"""
