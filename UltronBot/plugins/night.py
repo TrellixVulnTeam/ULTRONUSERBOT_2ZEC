@@ -17,7 +17,7 @@ night_time = None
 last_night_message = {}
 
 DEFAULTUSER = (
-    str(ALIVE_NAME) if ALIVE_NAME else "ULTRON"
+    str(HELL_USER) if  HELL_USER else "ULTRON"
 )
 
 
