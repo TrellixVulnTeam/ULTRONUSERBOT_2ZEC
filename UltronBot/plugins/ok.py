@@ -1,4 +1,4 @@
-
+"""
 from telethon import events
 import random
 import logging
@@ -20,3 +20,4 @@ from UltronBot.cmds import *
 CmdHelp("ok").add_command(
     "ok", None, "Use and See"
 ).add()
+"""
