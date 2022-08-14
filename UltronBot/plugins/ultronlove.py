@@ -1,4 +1,4 @@
-import asyncio
+"""import asyncio
 import random
 from . import *
 NUMBER = ["0", "1"]
@@ -125,3 +125,4 @@ CmdHelp("love").add_command(
 ).add_command(
 'stoplove', None, 'Reply To her Ya him To stop mysticxlove'
 ).add()
+"""
