@@ -15,9 +15,9 @@ async def reply_id(event):
 
 
 DEFAULTUSER = ALIVE_NAME or "UltronBot"
- ULTRON_IMG = Config.ALIVE_PIC
-CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG or "ℓєgєи∂ Choice Ultronϐοτ"
-CUSTOM_YOUR_GROUP =Config.YOUR_GROUP or "@UltronBot_xD"
+ PIC = "https://telegra.ph/file/d69901c925579aaf67ab9.jpg"
+CUSTOM_ALIVE_TEXT =  "ℓєgєи∂ Choice Ultronϐοτ"
+CUSTOM_YOUR_GROUP =  "@UltronBot_xD"
 
 USERID = bot.uid
 
@@ -62,7 +62,7 @@ async def amireallyalive(event):
         return
     reply_to_id = await reply_id(event)
 
-    if  ULTRON_IMG:
+    if  PIC:
          ULTRON_caption = f"**{mention}**\n"
         
          ULTRON_caption += f"~~~~~~~~~~~~~~~~~~~~~~~\n"
@@ -76,7 +76,7 @@ async def amireallyalive(event):
          ULTRON_caption += f"•🔥•𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 : [Group](t.me/UltronBot_xD\n"   
 
         await event.client.send_file(
-            event.chat_id,  ULTRON_IMG, caption= ULTRON_caption, reply_to=reply_to_id
+            event.chat_id,  PIC, caption= ULTRON_caption, reply_to=reply_to_id
         )
         await event.delete()
     else:
