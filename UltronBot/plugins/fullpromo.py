@@ -1,4 +1,4 @@
-
+"""
 
 
 
@@ -49,3 +49,4 @@ async def prmte(event):
         return await xx.edit("I don't have the right to promote you.")
     await asyncio.sleep(5)
     await xx.delete()
+"""
