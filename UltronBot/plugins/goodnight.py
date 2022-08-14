@@ -1,6 +1,6 @@
 import asyncio
 from . import *
-from UltronBot.cmdhelp import CmdHelp
+from UltronBot.cmds import CmdHelp
 @bot.on(admin_cmd(pattern="gn"))
 async def _(event):
 	await asyncio.sleep(1)
