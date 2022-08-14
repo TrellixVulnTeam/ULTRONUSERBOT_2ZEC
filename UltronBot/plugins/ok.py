@@ -16,7 +16,7 @@ async def _(event):
                      r == 1            
                      await event.edit("╭━━━╮\n┃╭━━╯\n┃╰━━╮\n┃╭━━╯\n┃┃\n╰╯")
 
-from UltronBot.cmdhelp import CmdHelp
+from UltronBot.cmds import *
 CmdHelp("ok").add_command(
     "ok", None, "Use and See"
 ).add()
