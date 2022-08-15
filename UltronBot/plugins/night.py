@@ -5,7 +5,7 @@ import datetime
 from telethon import events
 from telethon.tl import functions, types
 
-from UltronBot import ALIVE_NAME
+from UltronBot import HELL_USER
 from UltronBot.utils import admin_cmd
 from UltronBot.cmdhelp import CmdHelp
 
