@@ -77,11 +77,11 @@ async def start_UltronBot():
         await plug_load("UltronBot/plugins/*.py")
         await plug_channel(bot, Config.PLUGIN_CHANNEL)
         LOGS.info(f"""『🔱ԱӀէɾօղ Աʂҽɾβօէ🔱』➙𖤍࿐ IS ON!!! ԱӀէɾօղ Աʂҽɾβօէ VERSION :- 𝕍:𝕒 𝟙.𝟘
-                      TYPE :- " .gpromote @LegendHacker_IIN & @thanospros " OR .help OR .ping CHECK IF I'M ON!
+                      TYPE :- " .gpromote @Deepakworldking " OR .help OR .ping CHECK IF I'M ON!
                       ╔════❰ ԱӀէɾօղ Աʂҽɾβօէ ❱═❍⊱❁
-                      ║┣⪼ OWNER - 𝕃𝕖𝕘𝕖𝕟𝕕ℍ𝕒𝕔𝕜𝕖𝕣 & 𝕋𝕙𝕒𝕟𝕠𝕤𝔹𝕠𝕪
+                      ║┣⪼ OWNER -  >>ᴀʟᴛʀᴏɴ ᴋɪɴɢ<<
                       ║┣⪼ Ultra Real Stick Bot 
-                      ║┣⪼ CREATOR -@LegendHacker_IIN & @thanospros
+                      ║┣⪼ CREATOR - @Deepakworldking
                       ║┣⪼ TELETHON - 1.2.0
                       ║┣⪼ ✨ 『🔱🆄🅻🆃🆁🅾🅽🔱』𝐔𝐬𝐞𝐫𝐛𝐨𝐭✨
                       ║╰━━━━━━━━━━━━━━━➣
