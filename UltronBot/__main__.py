@@ -14,7 +14,7 @@ from UltronBot.version import __hell__ as hellver
 
 hl = Config.HANDLER
 
-HELL_PIC = "https://telegra.ph/file/82b8456afa0fbdc81ae3d.jpg"
+HELL_PIC = "https://telegra.ph/file/4055d9d4065beec4f5fae.jpg"
 
 
 # Client Starter
@@ -62,7 +62,7 @@ async def start_UltronBot():
         tbot_id = await tbot.get_me()
         Config.BOT_USERNAME = f"@{tbot_id.username}"
         bot.tgbot = tbot
-        LOGS.info("ULTRON BOT READY TO RUN")
+        LOGS.info("SPARTAN BOT READY TO RUN")
         C1 = await hells(Config.ULTRONBOT_SESSION, bot, "ULTRONBOT_SESSION")
         C2 = await hells(Config.SESSION_2, H2, "SESSION_2")
         C3 = await hells(Config.SESSION_3, H3, "SESSION_3")
@@ -70,20 +70,20 @@ async def start_UltronBot():
         C5 = await hells(Config.SESSION_5, H5, "SESSION_5")
         await tbot.start()
         total = C1 + C2 + C3 + C4 + C5
-        LOGS.info("╔════❰ԱӀէɾօղ Աʂҽɾβօէ❱═❍⊱❁")
-        LOGS.info("║┣⪼ 𝕊𝕥𝕒𝕣𝕥𝕚𝕟𝕘. 𝕌𝕝𝕥𝕣𝕠𝕟 𝕌𝕤𝕖𝕣𝔹𝕠𝕠𝕥")
+        LOGS.info("╔════❰Spartan Աʂҽɾβօէ❱═❍⊱❁")
+        LOGS.info("║┣⪼ 𝕊𝕥𝕒𝕣𝕥𝕚𝕟𝕘. 𝕊𝕡𝕒𝕣𝕥𝕒𝕟 𝕌𝕤𝕖𝕣𝔹𝕠𝕠𝕥")
         LOGS.info("║┣⪼ 𝕊𝕥𝕒𝕣𝕥𝕚𝕟𝕘. 𝕃𝕠𝕕𝕚𝕟𝕘...")
         LOGS.info("╚══════════════════❍⊱")
         await plug_load("UltronBot/plugins/*.py")
         await plug_channel(bot, Config.PLUGIN_CHANNEL)
-        LOGS.info(f"""『🔱ԱӀէɾօղ Աʂҽɾβօէ🔱』➙𖤍࿐ IS ON!!! ԱӀէɾօղ Աʂҽɾβօէ VERSION :- 𝕍:𝕒 𝟙.𝟘
+        LOGS.info(f"""『🔱Ϛքąɾէąղ Աʂҽɾβօէ🔱』➙𖤍࿐ IS ON!!! Ϛքąɾէąղ Աʂҽɾβօէ VERSION :- 𝕍:𝕒 𝟙.𝟘
                       TYPE :- " .gpromote @Deepakworldking " OR .help OR .ping CHECK IF I'M ON!
-                      ╔════❰ ԱӀէɾօղ Աʂҽɾβօէ ❱═❍⊱❁
-                      ║┣⪼ OWNER -  >>ᴀʟᴛʀᴏɴ ᴋɪɴɢ<<
+                      ╔════❰ Ϛքąɾէąղ Աʂҽɾβօէ ❱═❍⊱❁
+                      ║┣⪼ OWNER -  >>𝕊𝕡𝕒𝕣𝕥𝕒𝕟𝔹𝕠𝕪<<
                       ║┣⪼ Ultra Real Stick Bot 
-                      ║┣⪼ CREATOR - @Deepakworldking
+                      ║┣⪼ CREATOR - 𝕊𝕡𝕒𝕣𝕥𝕒𝕟𝔹𝕠𝕪
                       ║┣⪼ TELETHON - 1.2.0
-                      ║┣⪼ ✨ 『🔱🆄🅻🆃🆁🅾🅽🔱』𝐔𝐬𝐞𝐫𝐛𝐨𝐭✨
+                      ║┣⪼ ✨ 『🔱𝕊𝕡𝕒𝕣𝕥𝕒𝕟𝔹𝕠𝕪🔱』𝐔𝐬𝐞𝐫𝐛𝐨𝐭✨
                       ║╰━━━━━━━━━━━━━━━➣
                       ╚══════════════════❍⊱""")
         LOGS.info(f"» Total Clients = {str(total)} «")
