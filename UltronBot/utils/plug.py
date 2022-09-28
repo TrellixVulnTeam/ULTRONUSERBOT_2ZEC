@@ -44,7 +44,7 @@ def load_module(shortname):
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
-        LOGS.info("UltronBot - Successfully imported " + shortname)
+        LOGS.info("SpartanBot - Successfully imported " + shortname)
     else:
         import UltronBot.utils
 
@@ -87,7 +87,7 @@ def load_module(shortname):
         spec.loader.exec_module(mod)
         # for imports
         sys.modules["UltronBot.plugins." + shortname] = mod
-        LOGS.info("💥ԱӀէɾօղβօէ💥 - Successfully Imported " + shortname)
+        LOGS.info("💥Spartanβօէ💥 - Successfully Imported " + shortname)
 
 
 # remove plugins
@@ -111,8 +111,8 @@ def remove_plugin(shortname):
 
 async def plug_channel(client, channel):
     if channel:
-        LOGS.info("💥ԱӀէɾօղβօէ💥 - PLUGIN CHANNEL DETECTED.")
-        LOGS.info("💥ԱӀէɾօղβօէ💥 - Starting to load extra plugins.")
+        LOGS.info("💥Spartanβօէ💥 - PLUGIN CHANNEL DETECTED.")
+        LOGS.info("💥Spartanβօէ💥 - Starting to load extra plugins.")
         plugs = await client.get_messages(channel, None, filter=InputMessagesFilterDocument)
         total = int(plugs.total)
         for plugins in range(total):
