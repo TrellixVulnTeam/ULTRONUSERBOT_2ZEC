@@ -10,7 +10,7 @@ from UltronBot.sql.gvar_sql import addgvar, gvarstat
 
 # Creates the logger group on first deploy and adds the helper bot
 async def logger_id(client):
-    desc = "A Bot Logger Group For UltronBot. DO NOT LEAVE THIS GROUP!!"
+    desc = "A Bot Logger Group For SpartanBot. DO NOT LEAVE THIS GROUP!!"
     new_rights = ChatAdminRights(
         add_admins=True,
         invite_users=True,
@@ -21,7 +21,7 @@ async def logger_id(client):
         manage_call=True,
     )
     try:
-        grp = await client(functions.channels.CreateChannelRequest(title="UltronBot Logger", about=desc, megagroup=True))
+        grp = await client(functions.channels.CreateChannelRequest(title="SpartanBot Logger", about=desc, megagroup=True))
         grp_id = grp.chats[0].id
         grp = await client(functions.messages.ExportChatInviteRequest(peer=grp_id))
         await client(functions.channels.InviteToChannelRequest(channel=grp_id, users=[Config.BOT_USERNAME]))
@@ -63,14 +63,14 @@ async def start_msg(client, pic, version, total):
 <b><i>Clients :</b></i> <code>{str(total)}</code>
 <b><i>Sudo :</b></i> <code>{is_sudo}</code>
 
-<b><i>»» <u><a href='https://t.me/UltronBot_XD'>💥ԱӀէɾօղβօէ💥</a></u> ««</i></b>
+<b><i>»» <u><a href='https://t.me/SpartanBot_XD'>💥Spartanβօէ💥</a></u> ««</i></b>
 """
     await client.send_file(
         Config.LOGGER_ID,
         pic,
         caption=text,
         parse_mode="HTML",
-        buttons=[[Button.url("💥ԱӀէɾօղβօէ💥", "https://t.me/UltronBot_XD")]],
+        buttons=[[Button.url("💥Spartanβօէ💥", "https://t.me/SpartanBot_XD")]],
     )
 
 
@@ -78,8 +78,8 @@ async def start_msg(client, pic, version, total):
 async def join_it(client):
     if client:
         try:
-            await client(functions.channels.JoinChannelRequest("@UltronBot_XD"))
-            await client(functions.channels.JoinChannelRequest("@UltronBot_OP"))
+            await client(functions.channels.JoinChannelRequest("@SpartanBot_XD"))
+            await client(functions.channels.JoinChannelRequest("@SpartanBot_OP"))
         except BaseException:
             pass
 
